@@ -3,7 +3,7 @@ import { DataLinks } from "@/Datacenter/Datacentre";
 import Image from "next/image";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/option";
-import { LogoutBtn, SignoutBtn } from "..";
+import { SignoutBtn } from "..";
 
 const NavBar = async () => {
 	const session = await getServerSession(authOptions);
